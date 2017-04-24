@@ -21,7 +21,7 @@ One of the most common and important uses of computer programs is to **search** 
 - [What is Algorithm Analysis?](http://interactivepython.org/runestone/static/pythonds/AlgorithmAnalysis/WhatIsAlgorithmAnalysis.html) and [Big-O Notation](http://interactivepython.org/runestone/static/pythonds/AlgorithmAnalysis/WhatIsAlgorithmAnalysis.html)
 
 ## Linear Search
-Fundamentally, search algorithms are used to "find" a particular item in list: given a very large list of elements, the goal of the search is to determine _whether_ the list contains the "target" item, and if so _where_ in the list that element is. Thus basic search algorithms are used to answer the questions ___is an item in a list?___ or ___which element in the list is the item?___.
+Fundamentally, search algorithms are used to "find" a particular item in list: given a very large list of elements, the goal of the search is to determine _whether_ the list contains the "target" item, and if so _where_ in the list that element is. Thus basic search algorithms are used to answer the questions ___is an item in a list?___ or _**which element in the list is the item?**_.
 
 - Python does contain built-in operators and list methods (e.g., `in`, `index()`, `max()` etc.) that can answer simple versions of these questions. However, more complex programs may require you to create your own "custom" searches following the patterns described here.
 
