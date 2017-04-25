@@ -123,7 +123,7 @@ def all_larger(a_list, minimum):
     """Returns whether all of the elements in the list are larger than the
        given minimum value."""
 
-    all_large = True  # every numer we've looked at is large
+    all_large = True  # every number we've looked at is large
     for element in a_list:
        if not (element > minimum):  # written as counter-example, equivalent to `element <= minimum`
            all_large = False  # counterexample found! Statement no-longer true
@@ -137,7 +137,7 @@ print( all_larger(numbers, 10) )  # False, some numbers are smaller than 10
 print( all_larger(numbers, 2) )  # True, all numbers are greater than 2
 ```
 
-- Careful variable naming (e.g., `all_large`) for keepign track of boolean claims is vital to being able to read and write these algorithms!
+- Careful variable naming (e.g., `all_large`) for keeping track of boolean claims is vital to being able to read and write these algorithms!
 
 Overall, a linear search is a simple and versatile algorithm, but can be tricky to apply depending on the question being asked.
 
@@ -241,8 +241,8 @@ def selection_sort(a_list):
             if(a_list[j] < a_list[selected_index]):
                 selected_index = j
 
-    # swap smallest into place (multi-assignment!)
-    a_list[i], a_list[selected_index] = a_list[selected_index], a_list[i]
+        # swap smallest into place (multi-assignment!)
+        a_list[i], a_list[selected_index] = a_list[selected_index], a_list[i]
 ```
 
 To determine the speed of the _selection sort_ algorithm, notice that the first time through the loop requires considering **`N`** different items (the whole loop). The second time requires checking **`N-1`** items, the third time **`N-2`** items, and so forth until the last time through the loop you only need to compare `2` then `1` items. These checks can then be summed into a series:
